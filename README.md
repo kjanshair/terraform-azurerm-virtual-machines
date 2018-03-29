@@ -41,14 +41,14 @@ module "VirtualMachine" {
     subnet_id = "${azurerm_subnet.subnet.id}"
     resource_group = "<resource-group-name>"
     location            = "<nsg-location>"
-    count         =   2
+    nb_instances         =   2
     update_domain_count     =   2
     fault_domain_count      =   2
     availability_set_name   =   "<as-name>"
     host_names      =   ["host0", "host1", "host2"]
-    private_ips      =   ["10.0.1.0", "10.0.2.0", "10.0.3.0"]
+    private_ip_addresses      =   ["10.0.1.0", "10.0.2.0", "10.0.3.0"]
     backend_address_pools_ids         = ["<azure-load-balancer-backend-pool-id>"]
-    ssh_key = "<your-sshkey>"
+    ssh_key = "<your-public-sshkey>"
 }
 ```
 
