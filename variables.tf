@@ -12,7 +12,7 @@ variable "resource_group" {
     default = "Default"
 }
 
-variable "private_ips" {
+variable "private_ip_addresses" {
     description = "Specify list if private_ips assigned to each VMs respectively"  
     type    = "list"
 }
@@ -30,8 +30,8 @@ variable "subnet_id" {
     description = "Specify ID of the subnet."    
 }
 
-variable "count" {
-    description = "Specify number of vms to be created."    
+variable "nb_instances" {
+    description = "Specify number of vms to be created."
     default = "1"
 }
 
