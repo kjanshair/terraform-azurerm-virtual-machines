@@ -32,6 +32,7 @@ variable "subnet_id" {
 
 variable "count" {
     description = "Specify number of vms to be created."    
+    default = "1"
 }
 
 variable "ssh_key" {

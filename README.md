@@ -37,7 +37,7 @@ module "NetworkSecurityGroup" {
 
 module "VirtualMachine" {
     source = "kjanshair/virtual-machine/azurerm"
-    nsg_id = "network security group id"
+    nsg_id = "<network-security-group-id>"
     subnet_id = "${azurerm_subnet.subnet.id}"
     resource_group = "<resource-group-name>"
     location            = "<nsg-location>"
